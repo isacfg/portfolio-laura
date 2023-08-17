@@ -10,6 +10,7 @@ module.exports = {
       sans: ['Poppins', 'sans-serif'],
       serif: ['Poppins', 'serif'],
       poppins: ['Poppins', 'sans-serif'],
+      lexend: ['Lexend Mega', 'sans-serif'],
     },
     screns: {
       sm: { max: '479px' },
@@ -20,21 +21,13 @@ module.exports = {
     extend: {
       colors: {
         // light mode
-        white: '#FFF',
-        purple: '#543CD9',
-        black: '#0A0430',
+        white: '#F9F9F9',
+        pink: '#FF006B',
+        yellow: '#FFF301',
         gray: '#7F7F7F',
         lightgray: '#D9D9D9',
-
-        // dark mode
-        whiteDarkMode: '#060120',
-        purpleDarkMode: '#7c3aed',
-        blackDarkMode: '#f1f5f9',
-        grayDarkMode: '#94a3b8',
-
-        // takeaway project page
-        lightPurple: '#543cd933',
-        middlePurple: '#543cd980',
+        black: '#0A0430',
+        bgLight: '#FFFDF2',
       },
     },
   },
@@ -43,34 +36,12 @@ module.exports = {
   daisyui: {
     styled: true,
     themes: [
-      {
-        mytheme: {
-
-          "primary": "#543cd9",
-
-          "secondary": "#818CF8",
-
-          "accent": "#F471B5",
-
-          "neutral": "#0F172A",
-
-          "base-100": "#fff",
-
-          "info": "#0CA5E9",
-
-          "success": "#2DD4BF",
-
-          "warning": "#F4BF50",
-
-          "error": "#FB7085",
-        },
-      },
+      "light",
     ],
     base: true,
     utils: true,
     logs: true,
     rtl: false,
     prefix: "",
-    darkTheme: "dark",
   }
 }
