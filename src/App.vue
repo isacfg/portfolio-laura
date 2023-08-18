@@ -102,7 +102,7 @@ import { RouterLink, RouterView } from 'vue-router'
   background-image: url(./assets/main-gradient-bg.svg);
   background-position: 50% 0;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: scroll;
 }
 </style>
