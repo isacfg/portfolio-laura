@@ -2,8 +2,8 @@
   <div
     class="card-contact flex gap-24 justify-between items-center hover:bg-pink transition-custom">
     <div>
-      <p class="font-poppins text-2xl font-bold capitalize text-black">Behance</p>
-      <p class="font-poppis font-medium text-slate-500">@annlaur</p>
+      <p class="font-poppins text-2xl font-bold capitalize text-black">{{ socialMediaTitle }}</p>
+      <p class="font-poppis font-medium text-slate-500">{{ socialMediaAt }}</p>
     </div>
     <div>
       <img src="../assets/placeholder-social-media.png" alt="" srcset="" />
@@ -16,6 +16,14 @@ export default {
   name: 'ContactCard',
   props: {
     // props
+    socialMediaTitle: {
+      type: String,
+      required: true
+    },
+    socialMediaAt: {
+      type: String,
+      required: true
+    }
   },
   components: {
     // components

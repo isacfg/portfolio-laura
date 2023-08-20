@@ -165,7 +165,7 @@
 
       <div class="flex flex-col w-3/4 mx-auto items-center gap-y-12 mt-12">
         <div class="flex flex-row justify-evenly w-cem">
-          <ContactCard />
+          <ContactCard socialMediaTitle="Behance" socialMediaAt="@annlaur" />
           <ContactCard />
         </div>
         <div class="flex flex-row justify-evenly w-cem">
