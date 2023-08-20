@@ -1,5 +1,7 @@
 <template>
-  <div class="card-contact flex w-60 justify-between items-center hover:bg-pink transition-custom">
+  <div
+    @click="openLinkInNewTab(socialMediaLink)"
+    class="card-contact cursor-pointer flex w-60 justify-between items-center hover:bg-pink transition-custom">
     <div>
       <p class="font-poppins text-2xl font-bold capitalize text-black">{{ socialMediaTitle }}</p>
       <p class="font-poppis font-medium text-slate-500">{{ socialMediaAt }}</p>
@@ -22,6 +24,10 @@ export default {
     socialMediaAt: {
       type: String,
       required: true
+    },
+    socialMediaLink: {
+      type: String,
+      required: true
     }
   },
   components: {
@@ -30,6 +36,11 @@ export default {
   data() {
     return {
       // data
+    }
+  },
+  methods: {
+    openLinkInNewTab(url) {
+      window.open(url, '_blank')
     }
   }
 }

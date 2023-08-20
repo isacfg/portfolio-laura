@@ -1,11 +1,14 @@
 <template>
   <!-- hero -->
-  <div class="container mx-auto mt-28">
+  <div class="container max-md:px-8 mx-auto mt-28">
     <div class="flex hero-p flex-col mx-auto items-center">
-      <h1 class="text-center font-lexend font-bold uppercase text-6xl text-black max-md:text-4xl">
+      <h1
+        v-motion-pop
+        class="text-center font-lexend font-bold uppercase text-6xl text-black max-md:text-4xl">
         {{ homesStore.heroTitle }}
       </h1>
       <div
+        v-motion-pop
         class="scrolling-text-outer-container max-w-70 bg-pink p-3 overflow-hidden rounded-xl mt-8">
         <div class="scrolling-text-inner-container">
           <template v-for="line in homesStore.heroSubtitle">
@@ -19,7 +22,7 @@
       </div>
 
       <!-- banners -->
-      <div class="mt-36">
+      <div v-motion-slide-bottom class="mt-36">
         <img src="../assets/banners.png" alt="" srcset="" />
       </div>
     </div>
@@ -28,7 +31,7 @@
   <!-- scrolling gallery -->
   <div class="scrolling-gallery-container">
     <img class="w-cem" src="../assets/wave-1.svg" alt="" />
-    <div class="scrolling-gallery bg-pink">
+    <div v-motion-pop-visible class="scrolling-gallery bg-pink">
       <!-- scrolling gallery with 3 rows and min 5 collumns visible or partially visible, odd rows should go left -->
       <div class="gallery-row odd">
         <img
@@ -89,7 +92,7 @@
   </div>
 
   <!-- static gallery -->
-  <div class="grid-container mt-14">
+  <div id="projetos" class="grid-container mt-14">
     <div class="card-t grid-item card-pessoa-1">
       <div class="card-t-bg">
         <div class="card-t-block">
@@ -189,9 +192,11 @@
   </div>
 
   <!-- mande uma mensagem -->
-  <div class="bg-gradient h-screen">
+  <div class="bg-gradient-reverse h-screen">
     <div class="container mx-auto mt-28 flex flex-col items-center">
-      <h2 class="text-center text-black text-6xl max-md:text-5xl font-bold uppercase font-lexend">
+      <h2
+        v-motion-pop-visible
+        class="text-center text-black text-6xl max-md:text-5xl font-bold uppercase font-lexend">
         VAMOS<br />
         CONVERSAR?
       </h2>
@@ -200,18 +205,26 @@
         <div
           class="flex max-md:flex-col max-md:justify-center max-md:items-center flex-row justify-evenly w-cem max-md:gap-y-6">
           <ContactCard
+            v-motion-slide-visible-bottom
+            :socialMediaLink="homesStore.socialMediaOne.link"
             :socialMediaTitle="homesStore.socialMediaOne.name"
             :socialMediaAt="homesStore.socialMediaOne.at" />
           <ContactCard
+            v-motion-slide-visible-bottom
+            :socialMediaLink="homesStore.socialMediaTwo.link"
             :socialMediaTitle="homesStore.socialMediaTwo.name"
             :socialMediaAt="homesStore.socialMediaTwo.at" />
         </div>
         <div
           class="flex max-md:flex-col max-md:justify-center max-md:items-center flex-row justify-evenly w-cem max-md:gap-y-6">
           <ContactCard
+            v-motion-slide-visible-bottom
+            :socialMediaLink="homesStore.socialMediaThree.link"
             :socialMediaTitle="homesStore.socialMediaThree.name"
             :socialMediaAt="homesStore.socialMediaThree.at" />
           <ContactCard
+            v-motion-slide-visible-bottom
+            :socialMediaLink="homesStore.socialMediaFour.link"
             :socialMediaTitle="homesStore.socialMediaFour.name"
             :socialMediaAt="homesStore.socialMediaFour.at" />
         </div>

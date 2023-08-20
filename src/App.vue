@@ -45,10 +45,10 @@
                 >
               </li>
               <li>
-                <RouterLink
+                <a
                   class="font-poppins text-lg text-black font-semibold capitalize hover:italic hover:text-pink hover:border-none hover:bg-transparent focus:bg-transparent active:bg-transparent menu-item-p focus:text-pink active:text-pink"
-                  to="/projetos"
-                  >Projetos</RouterLink
+                  href="/#projetos"
+                  >Projetos</a
                 >
               </li>
               <li>
@@ -65,6 +65,9 @@
 
         <!-- ROUTER VIEW -->
         <RouterView />
+
+        <!-- Footer -->
+        <!-- <Footer /> -->
       </div>
       <div class="drawer-side">
         <label for="my-drawer-3" class="drawer-overlay"></label>
@@ -72,29 +75,29 @@
           <!-- Sidebar content here -->
           <li>
             <RouterLink
-              class="font-poppins text-lg text-black font-semibold capitalize hover:italic hover:text-pink hover:border-none hover:bg-transparent focus:bg-transparent active:bg-transparent menu-item-p focus:text-pink active:text-pink"
+              class="font-poppins text-lg text-white font-semibold capitalize hover:italic hover:text-white hover:border-none hover:bg-transparent focus:bg-transparent active:bg-transparent menu-item-p focus:text-white active:text-white"
               to="/"
               >Home</RouterLink
             >
           </li>
           <li>
             <a
-              class="font-poppins text-lg text-black font-semibold capitalize hover:italic hover:text-pink hover:border-none hover:bg-transparent focus:bg-transparent active:bg-transparent menu-item-p focus:text-pink active:text-pink"
+              class="font-poppins text-lg text-white font-semibold capitalize hover:italic hover:text-white hover:border-none hover:bg-transparent focus:bg-transparent active:bg-transparent menu-item-p focus:text-white active:text-white"
               :href="homesStore.resume"
               target="_blank"
               >Currículo</a
             >
           </li>
           <li>
-            <RouterLink
-              class="font-poppins text-lg text-black font-semibold capitalize hover:italic hover:text-pink hover:border-none hover:bg-transparent focus:bg-transparent active:bg-transparent menu-item-p focus:text-pink active:text-pink"
-              to="/projetos"
-              >Projetos</RouterLink
+            <a
+              class="font-poppins text-lg text-white font-semibold capitalize hover:italic hover:text-white hover:border-none hover:bg-transparent focus:bg-transparent active:bg-transparent menu-item-p focus:text-white active:text-white"
+              href="/#projetos"
+              >Projetos</a
             >
           </li>
           <li>
             <RouterLink
-              class="font-poppins text-lg text-black font-semibold capitalize hover:italic hover:text-pink hover:border-none hover:bg-transparent focus:bg-transparent active:bg-transparent menu-item-p focus:text-pink active:text-pink"
+              class="font-poppins text-lg text-white font-semibold capitalize hover:italic hover:text-white hover:border-none hover:bg-transparent focus:bg-transparent active:bg-transparent menu-item-p focus:text-white active:text-white"
               to="/about"
               >Contato</RouterLink
             >
@@ -107,6 +110,7 @@
 
 <script>
 import { RouterLink, RouterView } from 'vue-router'
+import Footer from './components/Footer.vue'
 
 import { mapStores } from 'pinia'
 import useHomesStore from '@/stores/home.js'
@@ -115,7 +119,8 @@ export default {
   name: 'App',
   components: {
     RouterLink,
-    RouterView
+    RouterView,
+    Footer
   },
   data() {
     return {}
@@ -133,6 +138,14 @@ export default {
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: contain;
+  background-attachment: scroll;
+}
+
+.bg-gradient-reverse {
+  background-image: url(./assets/main-gradient-bg-reverse.png);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: scroll;
 }
 
