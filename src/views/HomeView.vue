@@ -36,54 +36,54 @@
       <div class="gallery-row odd">
         <img
           class="gallery-item hover:rounded-3xl rounded transition-custom"
-          :src="projectsStore.projects[0].image"
+          src="../assets/placeholder-gallery.png"
           alt=""
           srcset="" />
         <img
           class="gallery-item hover:rounded-3xl transition-custom"
-          :src="projectsStore.projects[0].image"
+          src="../assets/placeholder-gallery.png"
           alt=""
           srcset="" />
         <img
           class="gallery-item hover:rounded-3xl transition-custom"
-          :src="projectsStore.projects[0].image"
+          src="../assets/placeholder-gallery.png"
           alt=""
           srcset="" />
         <img
           class="gallery-item hover:rounded-3xl transition-custom"
-          :src="projectsStore.projects[0].image"
+          src="../assets/placeholder-gallery.png"
           alt=""
           srcset="" />
         <img
           class="gallery-item hover:rounded-3xl transition-custom"
-          :src="projectsStore.projects[0].image"
+          src="../assets/placeholder-gallery.png"
           alt=""
           srcset="" />
       </div>
       <div class="gallery-row">
         <img
           class="gallery-item hover:rounded-3xl transition-custom"
-          :src="projectsStore.projects[0].image"
+          src="../assets/placeholder-gallery.png"
           alt=""
           srcset="" />
         <img
           class="gallery-item hover:rounded-3xl transition-custom"
-          :src="projectsStore.projects[0].image"
+          src="../assets/placeholder-gallery.png"
           alt=""
           srcset="" />
         <img
           class="gallery-item hover:rounded-3xl transition-custom"
-          :src="projectsStore.projects[0].image"
+          src="../assets/placeholder-gallery.png"
           alt=""
           srcset="" />
         <img
           class="gallery-item hover:rounded-3xl transition-custom"
-          :src="projectsStore.projects[0].image"
+          src="../assets/placeholder-gallery.png"
           alt=""
           srcset="" />
         <img
           class="gallery-item hover:rounded-3xl transition-custom"
-          :src="projectsStore.projects[0].image"
+          src="../assets/placeholder-gallery.png"
           alt=""
           srcset="" />
       </div>
