@@ -2,7 +2,7 @@
   <!-- hero -->
   <div class="container mx-auto mt-28">
     <div class="hero-p flex flex-col mx-auto items-center">
-      <h1 class="text-center font-lexend font-bold uppercase text-6xl">DESIGNER DE</h1>
+      <h1 class="text-center font-lexend font-bold uppercase text-6xl text-black">DESIGNER DE</h1>
       <div
         class="scrolling-text-outer-container max-w-70 bg-pink p-3 overflow-hidden rounded-xl mt-8">
         <div class="scrolling-text-inner-container">
@@ -55,8 +55,8 @@
     <img class="w-cem" src="../assets/wave-2.svg" alt="" />
   </div>
 
-  <!-- full width grid with 4 columns and 2 rows -->
-  <div class="grid-container">
+  <!-- static gallery -->
+  <div class="grid-container mt-14">
     <div class="card-t grid-item card-pessoa-1">
       <div class="card-t-bg">
         <div class="card-t-block">
@@ -158,41 +158,36 @@
   <!-- mande uma mensagem -->
   <div class="bg-gradient h-screen">
     <div class="container mx-auto mt-28 flex flex-col items-center">
-      <h2 class="text-center text-6xl font-bold uppercase font-lexend">
+      <h2 class="text-center text-black text-6xl font-bold uppercase font-lexend">
         VAMOS<br />
         CONVERSAR?
       </h2>
 
-      <div>
-        <div class="card-contact border-t-black flex gap-24 justify-between items-center">
-          <div>
-            <p>Behance</p>
-            <p>@annlaur</p>
-          </div>
-          <div>
-            <img src="../assets/placeholder-social-media.png" alt="" srcset="" />
-          </div>
+      <div class="flex flex-col w-3/4 mx-auto items-center gap-y-12 mt-12">
+        <div class="flex flex-row justify-evenly w-cem">
+          <ContactCard />
+          <ContactCard />
+        </div>
+        <div class="flex flex-row justify-evenly w-cem">
+          <ContactCard />
+          <ContactCard />
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script lang="ts">
+import ContactCard from '../components/ContactCard.vue'
+export default {
+  name: 'HomeView',
+  components: {
+    ContactCard
+  }
+}
+</script>
 
 <style scoped>
-.w-cem {
-  width: 100%;
-}
-
-.font-lexend {
-  letter-spacing: -10.44px;
-}
-
-.max-w-70 {
-  max-width: 70%;
-}
-
 @keyframes scroll-left {
   0% {
     transform: translateX(0);

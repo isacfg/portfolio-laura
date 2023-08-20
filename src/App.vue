@@ -105,4 +105,21 @@ import { RouterLink, RouterView } from 'vue-router'
   background-size: contain;
   background-attachment: scroll;
 }
+
+.transition-custom {
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.font-lexend {
+  letter-spacing: -10.44px;
+}
+
+.w-cem {
+  width: 100%;
+}
+.max-w-70 {
+  max-width: 70%;
+}
 </style>

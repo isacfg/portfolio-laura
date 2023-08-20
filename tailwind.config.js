@@ -27,7 +27,7 @@ module.exports = {
         gray: '#7F7F7F',
         lightgray: '#D9D9D9',
         black: '#0A0430',
-        bgLight: '#FFFDF2',
+        bgLight: '#fffced',
       },
     },
   },
