@@ -166,18 +166,18 @@
       <div class="flex flex-col w-3/4 mx-auto items-center gap-y-12 mt-12">
         <div class="flex flex-row justify-evenly w-cem">
           <ContactCard socialMediaTitle="Behance" socialMediaAt="@annlaur" />
-          <ContactCard />
+          <ContactCard socialMediaTitle="Instagram" socialMediaAt="@annlaur" />
         </div>
         <div class="flex flex-row justify-evenly w-cem">
-          <ContactCard />
-          <ContactCard />
+          <ContactCard socialMediaTitle="Currículo" socialMediaAt="@annlaur" />
+          <ContactCard socialMediaTitle="Email" socialMediaAt="@annlaur" />
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts">
+<script >
 import ContactCard from '../components/ContactCard.vue'
 export default {
   name: 'HomeView',
