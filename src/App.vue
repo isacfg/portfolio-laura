@@ -122,4 +122,10 @@ import { RouterLink, RouterView } from 'vue-router'
 .max-w-70 {
   max-width: 70%;
 }
+
+@media (max-width: 680px) {
+  .font-lexend {
+    letter-spacing: -4.44px;
+  }
+}
 </style>

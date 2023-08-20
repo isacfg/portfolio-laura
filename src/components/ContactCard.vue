@@ -1,6 +1,5 @@
 <template>
-  <div
-    class="card-contact flex gap-24 justify-between items-center hover:bg-pink transition-custom">
+  <div class="card-contact flex w-60 justify-between items-center hover:bg-pink transition-custom">
     <div>
       <p class="font-poppins text-2xl font-bold capitalize text-black">{{ socialMediaTitle }}</p>
       <p class="font-poppis font-medium text-slate-500">{{ socialMediaAt }}</p>

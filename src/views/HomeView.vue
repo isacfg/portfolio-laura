@@ -2,22 +2,28 @@
   <!-- hero -->
   <div class="container mx-auto mt-28">
     <div class="hero-p flex flex-col mx-auto items-center">
-      <h1 class="text-center font-lexend font-bold uppercase text-6xl text-black">DESIGNER DE</h1>
+      <h1 class="text-center font-lexend font-bold uppercase text-6xl text-black max-md:text-4xl">
+        DESIGNER DE
+      </h1>
       <div
         class="scrolling-text-outer-container max-w-70 bg-pink p-3 overflow-hidden rounded-xl mt-8">
         <div class="scrolling-text-inner-container">
-          <h1 class="text-center text-white font-lexend font-bold uppercase text-6xl">
+          <h1
+            class="text-center text-white max-md:text-4xl font-lexend font-bold uppercase text-6xl">
             SOCIAL MEDIA
           </h1>
           <img src="../assets/star.svg" alt="" srcset="" />
-          <h1 class="text-center text-white font-lexend font-bold uppercase text-6xl">
+          <h1
+            class="text-center text-white max-md:text-4xl font-lexend font-bold uppercase text-6xl">
             UI/UX DESIGNER
           </h1>
           <img src="../assets/star.svg" alt="" srcset="" />
-          <h1 class="text-center text-white font-lexend font-bold uppercase text-6xl">
+          <h1
+            class="text-center text-white max-md:text-4xl font-lexend font-bold uppercase text-6xl">
             BRAND DESIGNER
           </h1>
-          <h1 class="text-center text-white font-lexend font-bold uppercase text-6xl">
+          <h1
+            class="text-center text-white max-md:text-4xl font-lexend font-bold uppercase text-6xl">
             SOCIAL MEDIA
           </h1>
           <img src="../assets/star.svg" alt="" srcset="" />
@@ -158,17 +164,19 @@
   <!-- mande uma mensagem -->
   <div class="bg-gradient h-screen">
     <div class="container mx-auto mt-28 flex flex-col items-center">
-      <h2 class="text-center text-black text-6xl font-bold uppercase font-lexend">
+      <h2 class="text-center text-black text-6xl max-md:text-5xl font-bold uppercase font-lexend">
         VAMOS<br />
         CONVERSAR?
       </h2>
 
-      <div class="flex flex-col w-3/4 mx-auto items-center gap-y-12 mt-12">
-        <div class="flex flex-row justify-evenly w-cem">
+      <div class="flex flex-col w-3/4 mx-auto items-center gap-y-12 max-md:gap-y-6 mt-12">
+        <div
+          class="flex max-md:flex-col max-md:justify-center max-md:items-center flex-row justify-evenly w-cem max-md:gap-y-6">
           <ContactCard socialMediaTitle="Behance" socialMediaAt="@annlaur" />
           <ContactCard socialMediaTitle="Instagram" socialMediaAt="@annlaur" />
         </div>
-        <div class="flex flex-row justify-evenly w-cem">
+        <div
+          class="flex max-md:flex-col max-md:justify-center max-md:items-center flex-row justify-evenly w-cem max-md:gap-y-6">
           <ContactCard socialMediaTitle="Currículo" socialMediaAt="@annlaur" />
           <ContactCard socialMediaTitle="Email" socialMediaAt="@annlaur" />
         </div>
@@ -177,7 +185,7 @@
   </div>
 </template>
 
-<script >
+<script>
 import ContactCard from '../components/ContactCard.vue'
 export default {
   name: 'HomeView',
@@ -414,5 +422,21 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media (max-width: 680px) {
+  .scrolling-text-outer-container {
+    max-width: 300px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, auto);
+  }
+
+  .gallery-item {
+    width: 150px;
+    height: 150px;
+  }
 }
 </style>
