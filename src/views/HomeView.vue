@@ -1,32 +1,20 @@
 <template>
   <!-- hero -->
   <div class="container mx-auto mt-28">
-    <div class="hero-p flex flex-col mx-auto items-center">
+    <div class="flex hero-p flex-col mx-auto items-center">
       <h1 class="text-center font-lexend font-bold uppercase text-6xl text-black max-md:text-4xl">
-        DESIGNER DE
+        {{ homesStore.heroTitle }}
       </h1>
       <div
         class="scrolling-text-outer-container max-w-70 bg-pink p-3 overflow-hidden rounded-xl mt-8">
         <div class="scrolling-text-inner-container">
-          <h1
-            class="text-center text-white max-md:text-4xl font-lexend font-bold uppercase text-6xl">
-            SOCIAL MEDIA
-          </h1>
-          <img src="../assets/star.svg" alt="" srcset="" />
-          <h1
-            class="text-center text-white max-md:text-4xl font-lexend font-bold uppercase text-6xl">
-            UI/UX DESIGNER
-          </h1>
-          <img src="../assets/star.svg" alt="" srcset="" />
-          <h1
-            class="text-center text-white max-md:text-4xl font-lexend font-bold uppercase text-6xl">
-            BRAND DESIGNER
-          </h1>
-          <h1
-            class="text-center text-white max-md:text-4xl font-lexend font-bold uppercase text-6xl">
-            SOCIAL MEDIA
-          </h1>
-          <img src="../assets/star.svg" alt="" srcset="" />
+          <template v-for="line in homesStore.heroSubtitle">
+            <h2
+              class="text-center text-white max-md:text-4xl font-lexend font-bold uppercase text-6xl">
+              {{ line }}
+            </h2>
+            <img src="../assets/star.svg" alt="" srcset="" />
+          </template>
         </div>
       </div>
 
@@ -42,20 +30,59 @@
     <img class="w-cem" src="../assets/wave-1.svg" alt="" />
     <div class="scrolling-gallery bg-pink">
       <!-- scrolling gallery with 3 rows and min 5 collumns visible or partially visible, odd rows should go left -->
-
       <div class="gallery-row odd">
-        <img class="gallery-item" src="../assets/placeholder-gallery.png" alt="" srcset="" />
-        <img class="gallery-item" src="../assets/placeholder-gallery.png" alt="" srcset="" />
-        <img class="gallery-item" src="../assets/placeholder-gallery.png" alt="" srcset="" />
-        <img class="gallery-item" src="../assets/placeholder-gallery.png" alt="" srcset="" />
-        <img class="gallery-item" src="../assets/placeholder-gallery.png" alt="" srcset="" />
+        <img
+          class="gallery-item hover:rounded-3xl rounded transition-custom"
+          :src="projectsStore.projects[0].image"
+          alt=""
+          srcset="" />
+        <img
+          class="gallery-item hover:rounded-3xl transition-custom"
+          :src="projectsStore.projects[0].image"
+          alt=""
+          srcset="" />
+        <img
+          class="gallery-item hover:rounded-3xl transition-custom"
+          :src="projectsStore.projects[0].image"
+          alt=""
+          srcset="" />
+        <img
+          class="gallery-item hover:rounded-3xl transition-custom"
+          :src="projectsStore.projects[0].image"
+          alt=""
+          srcset="" />
+        <img
+          class="gallery-item hover:rounded-3xl transition-custom"
+          :src="projectsStore.projects[0].image"
+          alt=""
+          srcset="" />
       </div>
       <div class="gallery-row">
-        <img class="gallery-item" src="../assets/placeholder-gallery.png" alt="" srcset="" />
-        <img class="gallery-item" src="../assets/placeholder-gallery.png" alt="" srcset="" />
-        <img class="gallery-item" src="../assets/placeholder-gallery.png" alt="" srcset="" />
-        <img class="gallery-item" src="../assets/placeholder-gallery.png" alt="" srcset="" />
-        <img class="gallery-item" src="../assets/placeholder-gallery.png" alt="" srcset="" />
+        <img
+          class="gallery-item hover:rounded-3xl transition-custom"
+          :src="projectsStore.projects[0].image"
+          alt=""
+          srcset="" />
+        <img
+          class="gallery-item hover:rounded-3xl transition-custom"
+          :src="projectsStore.projects[0].image"
+          alt=""
+          srcset="" />
+        <img
+          class="gallery-item hover:rounded-3xl transition-custom"
+          :src="projectsStore.projects[0].image"
+          alt=""
+          srcset="" />
+        <img
+          class="gallery-item hover:rounded-3xl transition-custom"
+          :src="projectsStore.projects[0].image"
+          alt=""
+          srcset="" />
+        <img
+          class="gallery-item hover:rounded-3xl transition-custom"
+          :src="projectsStore.projects[0].image"
+          alt=""
+          srcset="" />
       </div>
     </div>
     <img class="w-cem" src="../assets/wave-2.svg" alt="" />
@@ -172,13 +199,21 @@
       <div class="flex flex-col w-3/4 mx-auto items-center gap-y-12 max-md:gap-y-6 mt-12">
         <div
           class="flex max-md:flex-col max-md:justify-center max-md:items-center flex-row justify-evenly w-cem max-md:gap-y-6">
-          <ContactCard socialMediaTitle="Behance" socialMediaAt="@annlaur" />
-          <ContactCard socialMediaTitle="Instagram" socialMediaAt="@annlaur" />
+          <ContactCard
+            :socialMediaTitle="homesStore.socialMediaOne.name"
+            :socialMediaAt="homesStore.socialMediaOne.at" />
+          <ContactCard
+            :socialMediaTitle="homesStore.socialMediaTwo.name"
+            :socialMediaAt="homesStore.socialMediaTwo.at" />
         </div>
         <div
           class="flex max-md:flex-col max-md:justify-center max-md:items-center flex-row justify-evenly w-cem max-md:gap-y-6">
-          <ContactCard socialMediaTitle="Currículo" socialMediaAt="@annlaur" />
-          <ContactCard socialMediaTitle="Email" socialMediaAt="@annlaur" />
+          <ContactCard
+            :socialMediaTitle="homesStore.socialMediaThree.name"
+            :socialMediaAt="homesStore.socialMediaThree.at" />
+          <ContactCard
+            :socialMediaTitle="homesStore.socialMediaFour.name"
+            :socialMediaAt="homesStore.socialMediaFour.at" />
         </div>
       </div>
     </div>
@@ -187,10 +222,23 @@
 
 <script>
 import ContactCard from '../components/ContactCard.vue'
+import { mapStores } from 'pinia'
+import useProjectsStore from '@/stores/projects.js'
+import useHomesStore from '@/stores/home.js'
+
 export default {
   name: 'HomeView',
   components: {
     ContactCard
+  },
+  props: {
+    bgPink: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    ...mapStores(useHomesStore, useProjectsStore)
   }
 }
 </script>

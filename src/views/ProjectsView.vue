@@ -1,5 +1,5 @@
 <template>
-  <div>projetcts</div>
+  <div class="container h-screen mx-auto mt-28">Sobre</div>
 </template>
 
 <script>

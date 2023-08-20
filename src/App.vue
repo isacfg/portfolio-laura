@@ -1,7 +1,3 @@
-<script>
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
   <div class="bg-gradient">
     <!-- nav -->
@@ -34,25 +30,30 @@ import { RouterLink, RouterView } from 'vue-router'
             <ul class="menu menu-horizontal">
               <!-- Navbar menu content here -->
               <li>
-                <RouterLink class="font-poppins text-lg text-black font-semibold capitalize" to="/"
+                <RouterLink
+                  class="font-poppins text-lg text-black font-semibold capitalize hover:italic hover:text-pink hover:border-none hover:bg-transparent focus:bg-transparent active:bg-transparent menu-item-p focus:text-pink active:text-pink"
+                  to="/"
                   >Home</RouterLink
                 >
               </li>
               <li>
-                <RouterLink class="font-poppins text-lg text-black font-semibold capitalize" to=""
-                  >Currículo</RouterLink
+                <a
+                  class="font-poppins text-lg text-black font-semibold capitalize hover:italic hover:text-pink hover:border-none hover:bg-transparent focus:bg-transparent active:bg-transparent menu-item-p focus:text-pink active:text-pink"
+                  :href="homesStore.resume"
+                  target="_blank"
+                  >Currículo</a
                 >
               </li>
               <li>
                 <RouterLink
-                  class="font-poppins text-lg text-black font-semibold capitalize"
+                  class="font-poppins text-lg text-black font-semibold capitalize hover:italic hover:text-pink hover:border-none hover:bg-transparent focus:bg-transparent active:bg-transparent menu-item-p focus:text-pink active:text-pink"
                   to="/projetos"
                   >Projetos</RouterLink
                 >
               </li>
               <li>
                 <RouterLink
-                  class="font-poppins text-lg text-black font-semibold capitalize"
+                  class="font-poppins text-lg text-black font-semibold capitalize hover:italic hover:text-pink hover:border-none hover:bg-transparent focus:bg-transparent active:bg-transparent menu-item-p focus:text-pink active:text-pink"
                   to="/about"
                   >Contato</RouterLink
                 >
@@ -70,24 +71,31 @@ import { RouterLink, RouterView } from 'vue-router'
         <ul class="menu p-4 w-80 h-full bg-pink">
           <!-- Sidebar content here -->
           <li>
-            <RouterLink class="font-poppins text-lg text-white font-semibold capitalize" to="/"
+            <RouterLink
+              class="font-poppins text-lg text-black font-semibold capitalize hover:italic hover:text-pink hover:border-none hover:bg-transparent focus:bg-transparent active:bg-transparent menu-item-p focus:text-pink active:text-pink"
+              to="/"
               >Home</RouterLink
             >
           </li>
           <li>
-            <RouterLink class="font-poppins text-lg text-white font-semibold capitalize" to=""
-              >Currículo</RouterLink
+            <a
+              class="font-poppins text-lg text-black font-semibold capitalize hover:italic hover:text-pink hover:border-none hover:bg-transparent focus:bg-transparent active:bg-transparent menu-item-p focus:text-pink active:text-pink"
+              :href="homesStore.resume"
+              target="_blank"
+              >Currículo</a
             >
           </li>
           <li>
             <RouterLink
-              class="font-poppins text-lg text-white font-semibold capitalize"
+              class="font-poppins text-lg text-black font-semibold capitalize hover:italic hover:text-pink hover:border-none hover:bg-transparent focus:bg-transparent active:bg-transparent menu-item-p focus:text-pink active:text-pink"
               to="/projetos"
               >Projetos</RouterLink
             >
           </li>
           <li>
-            <RouterLink class="font-poppins text-lg text-white font-semibold capitalize" to="/about"
+            <RouterLink
+              class="font-poppins text-lg text-black font-semibold capitalize hover:italic hover:text-pink hover:border-none hover:bg-transparent focus:bg-transparent active:bg-transparent menu-item-p focus:text-pink active:text-pink"
+              to="/about"
               >Contato</RouterLink
             >
           </li>
@@ -97,9 +105,31 @@ import { RouterLink, RouterView } from 'vue-router'
   </div>
 </template>
 
-<style>
+<script>
+import { RouterLink, RouterView } from 'vue-router'
+
+import { mapStores } from 'pinia'
+import useHomesStore from '@/stores/home.js'
+
+export default {
+  name: 'App',
+  components: {
+    RouterLink,
+    RouterView
+  },
+  data() {
+    return {}
+  },
+  computed: {
+    ...mapStores(useHomesStore)
+  },
+  mounted() {}
+}
+</script>
+
+<style lang="scss">
 .bg-gradient {
-  background-image: url(./assets/main-gradient-bg.svg);
+  background-image: url(./assets/main-gradient-bg.png);
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -110,6 +140,27 @@ import { RouterLink, RouterView } from 'vue-router'
   transition-property: all;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-item-p:active {
+  color: #ff006b;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.menu-item-p:focus {
+  color: #ff006b !important;
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.menu-item-p:hover {
+  color: #ff006b;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 .font-lexend {
