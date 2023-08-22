@@ -31,59 +31,69 @@
   <!-- scrolling gallery -->
   <div class="scrolling-gallery-container">
     <img class="w-cem" src="../assets/wave-1.svg" alt="" />
-    <div v-motion-pop-visible class="scrolling-gallery bg-pink">
+    <div class="scrolling-gallery bg-pink">
       <!-- scrolling gallery with 3 rows and min 5 collumns visible or partially visible, odd rows should go left -->
       <div class="gallery-row odd">
         <img
+          v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl rounded transition-custom"
-          src="../assets/placeholder-gallery.png"
+          src="../assets/design-temp-assets/bark burger/bark burguers (1).png"
           alt=""
           srcset="" />
         <img
+          v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/placeholder-gallery.png"
+          src="../assets/design-temp-assets/meu portifolio design grafico/caratz turma de contrabaixo acustico e eletrico cópia.png"
           alt=""
           srcset="" />
         <img
+          v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/placeholder-gallery.png"
+          src="../assets/design-temp-assets/bark burger/bark burguers (2).png"
           alt=""
           srcset="" />
         <img
+          v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/placeholder-gallery.png"
+          src="../assets/design-temp-assets/meu portifolio design grafico/Cartaz prof Kaio.png"
           alt=""
           srcset="" />
         <img
+          v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/placeholder-gallery.png"
+          src="../assets/design-temp-assets/meu portifolio design grafico/CCE_AVISO_CARD_POST CARNAVAL _03.02_FINAL.png"
           alt=""
           srcset="" />
       </div>
       <div class="gallery-row">
         <img
+          v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/placeholder-gallery.png"
+          src="../assets/design-temp-assets/meu portifolio design grafico/taylor swift clean the eras tour cópia.png"
           alt=""
           srcset="" />
         <img
+          v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/placeholder-gallery.png"
+          src="../assets/design-temp-assets/meu portifolio design grafico/recital turma de canto.png"
           alt=""
           srcset="" />
         <img
+          v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/placeholder-gallery.png"
+          src="../assets/design-temp-assets/bark burger/bark burguers (3).png"
           alt=""
           srcset="" />
         <img
+          v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/placeholder-gallery.png"
+          src="../assets/design-temp-assets/meu portifolio design grafico/matias de oliviveira pinto e ufrn cellos.png"
           alt=""
           srcset="" />
         <img
+          v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/placeholder-gallery.png"
+          src="../assets/design-temp-assets/meu portifolio design grafico/identidade visual FILA - poster 001 - 13_04 V2.png"
           alt=""
           srcset="" />
       </div>
@@ -96,48 +106,48 @@
     <div class="card-t grid-item card-pessoa-1">
       <div class="card-t-bg">
         <div class="card-t-block">
-          <h3 class="card-t-title">Bark Burguers - UFRN</h3>
-          <p class="card-t-text">2022</p>
+          <h3 class="card-t-title">Recital de Música</h3>
+          <p class="card-t-text">2023</p>
         </div>
       </div>
     </div>
     <div class="card-t grid-item card-pessoa-2">
       <div class="card-t-bg">
         <div class="card-t-block">
-          <h3 class="card-t-title">Bark Burguers - UFRN</h3>
-          <p class="card-t-text">2022</p>
+          <h3 class="card-t-title">Recital de Turma de Contrabaixo</h3>
+          <p class="card-t-text">2023</p>
         </div>
       </div>
     </div>
     <div class="card-t grid-item card-pessoa-3">
       <div class="card-t-bg">
         <div class="card-t-block">
-          <h3 class="card-t-title">Bark Burguers - UFRN</h3>
-          <p class="card-t-text">2022</p>
+          <h3 class="card-t-title">Dia das Mulheres EMUFRN</h3>
+          <p class="card-t-text">2023</p>
         </div>
       </div>
     </div>
     <div class="card-t grid-item card-pessoa-4">
       <div class="card-t-bg">
         <div class="card-t-block">
-          <h3 class="card-t-title">Bark Burguers - UFRN</h3>
-          <p class="card-t-text">2022</p>
+          <h3 class="card-t-title">Espaço Cultural Ruy Pereira</h3>
+          <p class="card-t-text">2023</p>
         </div>
       </div>
     </div>
     <div class="card-t grid-item card-pessoa-5">
       <div class="card-t-bg">
         <div class="card-t-block">
-          <h3 class="card-t-title">Bark Burguers - UFRN</h3>
-          <p class="card-t-text">2022</p>
+          <h3 class="card-t-title">Recital Matias de Oliveira</h3>
+          <p class="card-t-text">2023</p>
         </div>
       </div>
     </div>
     <div class="card-t grid-item card-pessoa-6">
       <div class="card-t-bg">
         <div class="card-t-block">
-          <h3 class="card-t-title">Bark Burguers - UFRN</h3>
-          <p class="card-t-text">2022</p>
+          <h3 class="card-t-title">Recital de Classe de Contrabaixo</h3>
+          <p class="card-t-text">2023</p>
         </div>
       </div>
     </div>
@@ -145,96 +155,36 @@
       <div class="card-t-bg">
         <div class="card-t-block">
           <h3 class="card-t-title">Bark Burguers - UFRN</h3>
-          <p class="card-t-text">2022</p>
+          <p class="card-t-text">2023</p>
         </div>
       </div>
     </div>
     <div class="card-t grid-item card-pessoa-8">
       <div class="card-t-bg">
         <div class="card-t-block">
-          <h3 class="card-t-title">Bark Burguers - UFRN</h3>
-          <p class="card-t-text">2022</p>
+          <h3 class="card-t-title">Taylor Swift Concept</h3>
+          <p class="card-t-text">2023</p>
         </div>
       </div>
     </div>
     <div class="card-t grid-item card-pessoa-9">
       <div class="card-t-bg">
         <div class="card-t-block">
-          <h3 class="card-t-title">Bark Burguers - UFRN</h3>
-          <p class="card-t-text">2022</p>
-        </div>
-      </div>
-    </div>
-    <div class="card-t grid-item card-pessoa-10">
-      <div class="card-t-bg">
-        <div class="card-t-block">
-          <h3 class="card-t-title">Bark Burguers - UFRN</h3>
-          <p class="card-t-text">2022</p>
-        </div>
-      </div>
-    </div>
-    <div class="card-t grid-item card-pessoa-11">
-      <div class="card-t-bg">
-        <div class="card-t-block">
-          <h3 class="card-t-title">Bark Burguers - UFRN</h3>
-          <p class="card-t-text">2022</p>
-        </div>
-      </div>
-    </div>
-    <div class="card-t grid-item card-pessoa-12">
-      <div class="card-t-bg">
-        <div class="card-t-block">
-          <h3 class="card-t-title">Bark Burguers - UFRN</h3>
-          <p class="card-t-text">2022</p>
+          <h3 class="card-t-title">Anúncio período de recitais</h3>
+          <p class="card-t-text">2023</p>
         </div>
       </div>
     </div>
   </div>
 
   <!-- mande uma mensagem -->
-  <div class="bg-gradient-reverse h-screen">
-    <div class="container mx-auto mt-28 flex flex-col items-center">
-      <h2
-        v-motion-pop-visible
-        class="text-center text-black text-6xl max-md:text-5xl font-bold uppercase font-lexend">
-        VAMOS<br />
-        CONVERSAR?
-      </h2>
-
-      <div class="flex flex-col w-3/4 mx-auto items-center gap-y-12 max-md:gap-y-6 mt-12">
-        <div
-          class="flex max-md:flex-col max-md:justify-center max-md:items-center flex-row justify-evenly w-cem max-md:gap-y-6">
-          <ContactCard
-            v-motion-slide-visible-bottom
-            :socialMediaLink="homesStore.socialMediaOne.link"
-            :socialMediaTitle="homesStore.socialMediaOne.name"
-            :socialMediaAt="homesStore.socialMediaOne.at" />
-          <ContactCard
-            v-motion-slide-visible-bottom
-            :socialMediaLink="homesStore.socialMediaTwo.link"
-            :socialMediaTitle="homesStore.socialMediaTwo.name"
-            :socialMediaAt="homesStore.socialMediaTwo.at" />
-        </div>
-        <div
-          class="flex max-md:flex-col max-md:justify-center max-md:items-center flex-row justify-evenly w-cem max-md:gap-y-6">
-          <ContactCard
-            v-motion-slide-visible-bottom
-            :socialMediaLink="homesStore.socialMediaThree.link"
-            :socialMediaTitle="homesStore.socialMediaThree.name"
-            :socialMediaAt="homesStore.socialMediaThree.at" />
-          <ContactCard
-            v-motion-slide-visible-bottom
-            :socialMediaLink="homesStore.socialMediaFour.link"
-            :socialMediaTitle="homesStore.socialMediaFour.name"
-            :socialMediaAt="homesStore.socialMediaFour.at" />
-        </div>
-      </div>
-    </div>
-  </div>
+  <Contact />
 </template>
 
 <script>
 import ContactCard from '../components/ContactCard.vue'
+import Contact from '../components/Contact.vue'
+
 import { mapStores } from 'pinia'
 import useProjectsStore from '@/stores/projects.js'
 import useHomesStore from '@/stores/home.js'
@@ -242,7 +192,8 @@ import useHomesStore from '@/stores/home.js'
 export default {
   name: 'HomeView',
   components: {
-    ContactCard
+    ContactCard,
+    Contact
   },
   props: {
     bgPink: {
@@ -277,7 +228,7 @@ export default {
 
 .scrolling-text-inner-container {
   animation: scroll-left 10s linear infinite;
-  grid-column-gap: 16px;
+  grid-column-gap: 26px;
   color: #fff;
   white-space: nowrap;
   align-items: center;
@@ -370,7 +321,7 @@ export default {
   opacity: 0;
   width: 100%;
   height: 100%;
-  background-color: #ff006b66;
+  background-color: #ff006aa6;
   transition: 0.4s ease;
 }
 
@@ -392,7 +343,7 @@ export default {
 }
 
 .card-t:hover .card-t-bg {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .card-t:hover ::after {
@@ -402,84 +353,84 @@ export default {
 /* card photos here */
 
 .card-pessoa-1 {
-  background: url(../assets/plh-1.png);
+  background: url('../assets/design-temp-assets/meu portifolio design grafico/Cartaz prof Kaio.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-2 {
-  background: url(../assets/plh-2.png);
+  background: url('../assets/design-temp-assets/meu portifolio design grafico/caratz turma de contrabaixo acustico e eletrico cópia.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-3 {
-  background: url(../assets/plh-3.png);
+  background: url('../assets/design-temp-assets/meu portifolio design grafico/CCE_AVISO_CARD_POST DIA DA MULHER 1 _03.02_FINAL.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-4 {
-  background: url(../assets/plh-4.png);
+  background: url('../assets/design-temp-assets/meu portifolio design grafico/cartaz-total-hip-replacement.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-5 {
-  background: url(../assets/plh-1.png);
+  background: url('../assets/design-temp-assets/meu portifolio design grafico/matias de oliviveira pinto e ufrn cellos.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-6 {
-  background: url(../assets/plh-2.png);
+  background: url('../assets/design-temp-assets/meu portifolio design grafico/Recital prof. Airton cópia.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-7 {
-  background: url(../assets/plh-3.png);
+  background: url('../assets/design-temp-assets/bark burger/bark burguers (4).png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-8 {
-  background: url(../assets/plh-4.png);
+  background: url('../assets/design-temp-assets/meu portifolio design grafico/taylor swift clean the eras tour cópia.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-9 {
-  background: url(../assets/plh-1.png);
+  background: url('../assets/design-temp-assets/meu portifolio design grafico/PostFimRecitais.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-10 {
-  background: url(../assets/plh-2.png);
+  background: url('../assets/design-temp-assets/meu portifolio design grafico/taylor swift clean the eras tour cópia.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-11 {
-  background: url(../assets/plh-3.png);
+  background: url('../assets/design-temp-assets/meu portifolio design grafico/taylor swift clean the eras tour cópia.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-12 {
-  background: url(../assets/plh-4.png);
+  background: url('../assets/design-temp-assets/meu portifolio design grafico/taylor swift clean the eras tour cópia.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -7,7 +7,10 @@
       <p class="font-poppis font-medium text-slate-500">{{ socialMediaAt }}</p>
     </div>
     <div>
-      <img src="../assets/placeholder-social-media.png" alt="" srcset="" />
+      <img v-if="type == 'behance'" src="../assets/icons/behance.svg" alt="" srcset="" />
+      <img v-if="type == 'instagram'" src="../assets/icons/instagram.svg" alt="" srcset="" />
+      <img v-if="type == 'curriculo'" src="../assets/icons/mail.svg" alt="" srcset="" />
+      <img v-if="type == 'gmail'" src="../assets/icons/gmail.svg" alt="" srcset="" />
     </div>
   </div>
 </template>
@@ -28,6 +31,9 @@ export default {
     socialMediaLink: {
       type: String,
       required: true
+    },
+    type: {
+      type: String
     }
   },
   components: {
