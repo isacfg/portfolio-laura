@@ -37,31 +37,31 @@
         <img
           v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl rounded transition-custom"
-          src="../assets/design-temp-assets/bark burger/bark burguers (1).png"
+          src="../assets/design-temp-assets/bark-burger/1.png"
           alt=""
           srcset="" />
         <img
           v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/design-temp-assets/meu portifolio design grafico/caratz turma de contrabaixo acustico e eletrico cópia.png"
+          src="../assets/design-temp-assets/design/contrabaixo.png"
           alt=""
           srcset="" />
         <img
           v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/design-temp-assets/bark burger/bark burguers (2).png"
+          src="../assets/design-temp-assets/bark-burger/2.png"
           alt=""
           srcset="" />
         <img
           v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/design-temp-assets/meu portifolio design grafico/Cartaz prof Kaio.png"
+          src="../assets/design-temp-assets/design/kaio.png"
           alt=""
           srcset="" />
         <img
           v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/design-temp-assets/meu portifolio design grafico/CCE_AVISO_CARD_POST CARNAVAL _03.02_FINAL.png"
+          src="../assets/design-temp-assets/design/carnaval.png"
           alt=""
           srcset="" />
       </div>
@@ -69,31 +69,31 @@
         <img
           v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/design-temp-assets/meu portifolio design grafico/taylor swift clean the eras tour cópia.png"
+          src="../assets/design-temp-assets/design/taylor.png"
           alt=""
           srcset="" />
         <img
           v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/design-temp-assets/meu portifolio design grafico/recital turma de canto.png"
+          src="../assets/design-temp-assets/design/canto.png"
           alt=""
           srcset="" />
         <img
           v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/design-temp-assets/bark burger/bark burguers (3).png"
+          src="../assets/design-temp-assets/bark-burger/3.png"
           alt=""
           srcset="" />
         <img
           v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/design-temp-assets/meu portifolio design grafico/matias de oliviveira pinto e ufrn cellos.png"
+          src="../assets/design-temp-assets/design/matias.png"
           alt=""
           srcset="" />
         <img
           v-motion-pop-visible-once
           class="gallery-item hover:rounded-3xl transition-custom"
-          src="../assets/design-temp-assets/meu portifolio design grafico/identidade visual FILA - poster 001 - 13_04 V2.png"
+          src="../assets/design-temp-assets/design/identidadefila.png"
           alt=""
           srcset="" />
       </div>
@@ -353,84 +353,84 @@ export default {
 /* card photos here */
 
 .card-pessoa-1 {
-  background: url('../assets/design-temp-assets/meu portifolio design grafico/Cartaz prof Kaio.png');
+  background: url('../assets/design-temp-assets/design/kaio.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-2 {
-  background: url('../assets/design-temp-assets/meu portifolio design grafico/caratz turma de contrabaixo acustico e eletrico cópia.png');
+  background: url('../assets/design-temp-assets/design/contrabaixo.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-3 {
-  background: url('../assets/design-temp-assets/meu portifolio design grafico/CCE_AVISO_CARD_POST DIA DA MULHER 1 _03.02_FINAL.png');
+  background: url('../assets/design-temp-assets/design/mulher.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-4 {
-  background: url('../assets/design-temp-assets/meu portifolio design grafico/cartaz-total-hip-replacement.jpg');
+  background: url('../assets/design-temp-assets/design/hip.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-5 {
-  background: url('../assets/design-temp-assets/meu portifolio design grafico/matias de oliviveira pinto e ufrn cellos.png');
+  background: url('../assets/design-temp-assets/design/matias.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-6 {
-  background: url('../assets/design-temp-assets/meu portifolio design grafico/Recital prof. Airton cópia.png');
+  background: url('../assets/design-temp-assets/design/airton.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-7 {
-  background: url('../assets/design-temp-assets/bark burger/bark burguers (4).png');
+  background: url('../assets/design-temp-assets/bark-burger/4.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-8 {
-  background: url('../assets/design-temp-assets/meu portifolio design grafico/taylor swift clean the eras tour cópia.png');
+  background: url('../assets/design-temp-assets/design/taylor.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-9 {
-  background: url('../assets/design-temp-assets/meu portifolio design grafico/PostFimRecitais.png');
+  background: url('../assets/design-temp-assets/design/PostFimRecitais.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-10 {
-  background: url('../assets/design-temp-assets/meu portifolio design grafico/taylor swift clean the eras tour cópia.png');
+  background: url('../assets/design-temp-assets/design/taylor.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-11 {
-  background: url('../assets/design-temp-assets/meu portifolio design grafico/taylor swift clean the eras tour cópia.png');
+  background: url('../assets/design-temp-assets/design/taylor.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card-pessoa-12 {
-  background: url('../assets/design-temp-assets/meu portifolio design grafico/taylor swift clean the eras tour cópia.png');
+  background: url('../assets/design-temp-assets/design/taylor.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
